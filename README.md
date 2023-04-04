@@ -14,7 +14,7 @@ VMware-16.2.5
 
 ### 虚拟机linux镜像
 
-[镜像下载链接](链接：https://pan.baidu.com/s/1iuoefJK-9R7SEEHcB1NHig?pwd=q5rc "限速百度 不得好死")
+[镜像下载链接](https://pan.baidu.com/s/1iuoefJK-9R7SEEHcB1NHig?pwd=q5rc "限速百度 不得好死")
 
 虚拟机 *用户密码和超级用户密码*均为：debian_11
 
