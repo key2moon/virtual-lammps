@@ -1,0 +1,4 @@
+#host后的字符可以随意修改
+Host cy
+  HostName 
+  User moon
