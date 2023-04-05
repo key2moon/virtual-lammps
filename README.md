@@ -14,19 +14,19 @@ virtual-lammps是一个旨在降低lammps安装门槛，便于更多windows使�
 
 3.自定义安装位置，安装位置最好`没有中文和空格`。安装“增强型键盘驱动程序”，选择“下一步”
 
-![avatar](pic\vm_install\1.png)
+![avatar](./pic/vm_install/1.png)
 
 4.取消“检查产品更新”  “加入客户体验计划”，依次选择“下一步”  “下一步”  “安装”
 
-![avatar](pic\vm_install\2.png)
+![avatar](./pic/vm_install/2.png)
 
 5.请注意！安装完成时，单击许可证，复制一个`16.2.5`版本VMware workstation的许可证密钥，单击“输入”。单击“完成”退出安装
 
-![avatar](pic\vm_install\3.png)
+![avatar](./pic/vm_install/3.png)
 
 6.重新启动系统，选择“是”
 
-![avatar](pic\vm_install\4.png)
+![avatar](./pic/vm_install/4.png)
 
 > 后续会考虑打包成一个iso文件以支持其他虚拟机软件，看需要的人多不多
 
@@ -38,36 +38,36 @@ virtual-lammps是一个旨在降低lammps安装门槛，便于更多windows使�
 
 （这里使用的是7z自解压exe文件，见下图选中）
 
-![avatar](pic\vm_config\1.png)
+![avatar](./pic/vm_config/1.png)
 
 2.打开VMware，选择“打开虚拟机”
 
-![avatar](pic\vm_config\2.png)
+![avatar](./pic/vm_config/2.png)
 
 找到刚刚的`debian`文件夹，选择文件`Debian 11.6 64 位 的克隆.vmx`，打开
 
-![avatar](pic\vm_config\3.png)
+![avatar](./pic/vm_config/3.png)
 
 即可看到已经配置好的虚拟机
 
-![avatar](pic\vm_config\4.png)
+![avatar](./pic/vm_config/4.png)
 
 3.屏幕最下一行右击，打开Windows系统的任务管理器。
 
-![avatar](pic\vm_config\5.png)
+![avatar](./pic/vm_config/5.png)
 
 菜单栏下一行选择“性能”，记住自己机器的几个参数：
 内存、内核、逻辑处理器
 
-![avatar](pic\vm_config\6.png)
+![avatar](./pic/vm_config/6.png)
 
 回到虚拟机，单击“编辑虚拟机设置”。
 
-![avatar](pic\vm_config\7.png)
+![avatar](./pic/vm_config/7.png)
 
 选择左侧“处理器”，处理器数量 可以设置的 最大值为`内核`数量减一
 
-![avatar](pic\vm_config\8.png)
+![avatar](./pic/vm_config/8.png)
 
 > 若`逻辑处理器`数量为`内核`数量2倍，`每个处理器的内核数量`可以设置为2或1
 > 若`逻辑处理器`数量为`内核`数量1倍，`每个处理器的内核数量`只能设置为1
@@ -76,15 +76,15 @@ virtual-lammps是一个旨在降低lammps安装门槛，便于更多windows使�
 
 4.单击“开启此虚拟机”，启动虚拟机
 
-![avatar](pic\vm_config\9.png)
+![avatar](./pic/vm_config/9.png)
 
 开机需要等待一阵子，双击中间的用户`moon`，输入密码debian_11，回车，则可以自由探索debian系统
 
-![avatar](pic\vm_config\10.png)
+![avatar](./pic/vm_config/10.png)
 
 5.在虚拟机中，先按`win`键，输入`setting`，找到系统设置。左侧选择网络，右侧选择有线最后的`设置`按钮，记下虚拟机的`IPv4地址`
 
-![avatar](pic\vm_config\11.png)
+![avatar](./pic/vm_config/11.png)
 
 ### VS Code下载安装
 
@@ -94,15 +94,15 @@ virtual-lammps是一个旨在降低lammps安装门槛，便于更多windows使�
 
 1.右击exe安装包，打开
 
-![avatar](pic\VSCode_install\1.png)
+![avatar](./pic/VSCode_install/1.png)
 
 2.依次选择“我同意此协议”  “下一步”，选择安装位置
 
-![avatar](pic\VSCode_install\2.png)
+![avatar](./pic/VSCode_install/2.png)
 
 3.选择两次“下一步”，附加任务全部勾选，选择“下一步”  “安装”
 
-![avatar](pic\VSCode_install\3.png)
+![avatar](./pic/VSCode_install/3.png)
 
 4.安装完成，运行VS Code
 
@@ -110,21 +110,21 @@ virtual-lammps是一个旨在降低lammps安装门槛，便于更多windows使�
 
 1.首先安装中文语言包，VS Code会自动重启
 
-![avatar](pic\vscode_config\1.png)
+![avatar](./pic/vscode_config/1.png)
 
 2.左上角单击“文件”，选择打开一个特定的文件夹，此处为`code`。可以在左侧资源管理器看到code文件夹力的文件
 
-![avatar](pic\vscode_config\2.png)
+![avatar](./pic/vscode_config/2.png)
 
 3.VS Code最左侧选择最下面一个按钮，在搜索栏搜索并安装`Lammps Syntax Highlighting`插件，图示即安装好了
 
-![avatar](pic\vscode_config\3.png)
+![avatar](./pic/vscode_config/3.png)
 
 4.搜索并安装`sftp`插件。最左侧选择第一个按钮，切换到资源管理器。
 
 使用快捷键`ctrl+shift+P`，在顶端搜索`SFTP`，单击对`SFTP:Config`进行设置。得到如下文件：
 
-![avatar](pic\vscode_config\4.png)
+![avatar](./pic/vscode_config/4.png)
 
 将上传的sftp.json文件用记事本打开，复制进VS Code
 
@@ -134,17 +134,17 @@ virtual-lammps是一个旨在降低lammps安装门槛，便于更多windows使�
 
 （这一步也可以直接在此电脑中用记事本修改上传到json文件，再复制以替换原来的文件，但需要先关掉VS Code再替换）
 
-![avatar](pic\vscode_config\5.png)
+![avatar](./pic/vscode_config/5.png)
 
 5.搜索并安装`Remote - SSH`插件。最左侧选择倒数第二个按钮，切换到远程资源管理器。
 
 选择左侧远程资源管理器，单击SSH后的“设置图标”
 
-![avatar](pic\vscode_config\6.png)
+![avatar](./pic/vscode_config/6.png)
 
 选择第一个文件，即打开"C:\Users\你的用户名\.ssh\config"
 
-![avatar](pic\vscode_config\7.png)
+![avatar](./pic/vscode_config/7.png)
 
 同样地，用上传的config文件替换你本地的config文件，文本复制或是直接文件替换请自便
 
@@ -160,39 +160,39 @@ virtual-lammps是一个旨在降低lammps安装门槛，便于更多windows使�
 
 3.选择“远程-SSH-cy-code”后的第二个按钮，在新窗口中打开远程链接，第一次使用会有很长的设置时间
 
-![avatar](pic\daily_use\1.png)
+![avatar](./pic/daily_use/1.png)
 
 4.这里直接选择用密码而非密钥文件，输入“yes“并回车
 
-![avatar](pic\daily_use\2.png)
+![avatar](./pic/daily_use/2.png)
 
 输入密码debian_11，并回车。在linux系统有关的设置中，密码并不会随着输入而显示，直接输入并回车即可。（不知为何，第一次连接时会提示管道不存在。关闭VS Code从第二步重新开始即可）
 
-![avatar](pic\daily_use\3.png)
+![avatar](./pic/daily_use/3.png)
 
 5.在最左侧选择扩展，选择`在ssh:cy`上安装Lammps Syntax Highlighting扩展
 
-![avatar](pic\daily_use\4.png)
+![avatar](./pic/daily_use/4.png)
 
 6.我们可以在左侧lammps文件夹下新建一个in.test 输入boundary p p p，观察插件的运行情况。（更多功能请看插件详情页，即安装页面）
 
-![avatar](pic\daily_use\5.png)
+![avatar](./pic/daily_use/5.png)
 
 7.运行一个lammps例子。首先在虚拟机中找一个lammps例子移动到`\home\moon\code\lammps`中，和win类似的操作即可。（先按`win`在左侧找到”文件“，例子在/用户文件夹/opt/lammps-23Jun2022/examples）
 
-![avatar](pic\daily_use\6.png)
+![avatar](./pic/daily_use/6.png)
 
 此处我们找到in.fire
 
-![avatar](pic\daily_use\7.png)
+![avatar](./pic/daily_use/7.png)
 
 8.调整Terminal终端。在下方终端处直接点击`+`，或者点击`bash`
 
-![avatar](pic\daily_use\8.png)
+![avatar](./pic/daily_use/8.png)
 
 输入`cd lammps`进入lammps文件夹
 
-![avatar](pic\daily_use\9.png)
+![avatar](./pic/daily_use/9.png)
 
 9.并行运行lammps
 
@@ -208,11 +208,11 @@ virtual-lammps是一个旨在降低lammps安装门槛，便于更多windows使�
 
 从虚拟机下载文件，右击，选择下载
 
-![avatar](pic\daily_use\10.png)
+![avatar](./pic/daily_use/10.png)
 
 windows上传到虚拟机，右击，upload file（默认上传到code文件夹）
 
-![avatar](pic\daily_use\11.png)
+![avatar](./pic/daily_use/11.png)
 
 ```bash
 moon@moon:~/code$ cd lammps
